@@ -11,6 +11,6 @@ public class TestJobSearchPage extends TestBase {
 	public void testNewJobsCount() {
 		String text = jobSearchPage.totalJobWebElement.getText();
 		
-		Assert.assertEquals(text, "New Jobs (Total: 1 Jobs)");
+		Assert.assertEquals(text, "New Jobs (Total: 570 Jobs)");
 	}
 }

@@ -6,7 +6,7 @@ import java.util.Properties;
 
 public class ReadProperties {
 	
-	public String getProperty( String key ) {
+	public static String getProperty( String key ) {
 		String value = null;
 		
 		Properties prop = loadProperty("testRun");
@@ -21,7 +21,7 @@ public class ReadProperties {
 		return value;
 	}
 	
-	public String getSaucelabsProperty( String key ) {
+	public static String getSaucelabsProperty( String key ) {
 		String value = null;
 		
 		Properties prop = loadProperty("saucelabs");
@@ -30,7 +30,7 @@ public class ReadProperties {
 		return value;
 	}
 	
-	private Properties loadProperty( String fileName ) {
+	private static Properties loadProperty( String fileName ) {
 		Properties prop = new Properties();
 		String filePath = "./src/main/resources/properties/"+ fileName +".properties";
 		
